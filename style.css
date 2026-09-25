@@ -93,7 +93,7 @@ header {
   background-color: var(--bg-color);
 
   /* Herobilledet som baggrunden*/
-  background-image: url(images/lumina-by-day/hero-pic.jpg);
+  background-image: url(images/lumina-by-day/hero-billede.webp);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -147,6 +147,7 @@ header {
   padding-top: 16px;
   cursor: pointer;
 }
+
 #menu img {
   width: 20 px;
   height: auto;
@@ -172,6 +173,7 @@ header {
   gap: 32px;
   padding: 16px;
 }
+
 .container {
   position: relative;
   width: 40vw;
@@ -249,7 +251,7 @@ header {
   border-bottom: 1px solid var(--tekst-farve);
 }
 
-.ButtonContainer > div {
+.ButtonContainer>div {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -324,24 +326,31 @@ så ringen altid følger den runde form, uanset browser)*/
 }
 
 .InstaKarrusel {
-  display: grid; /*lægger billederne på række*/
-  grid-auto-flow: column; /*lægger billederne vertikalt*/
-  grid-auto-columns: 19%; /*Bestemmer hvor mange procent af et billede skal fylde på siden*/
-  overflow-x: auto; /*stopper billederne i bare at fortsætte ud i "marginen"*/
-  overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
+  display: grid;
+  /*lægger billederne på række*/
+  grid-auto-flow: column;
+  /*lægger billederne vertikalt*/
+  grid-auto-columns: 19%;
+  /*Bestemmer hvor mange procent af et billede skal fylde på siden*/
+  overflow-x: auto;
+  /*stopper billederne i bare at fortsætte ud i "marginen"*/
+  overscroll-behavior-inline: contain;
+  /*fjerner muligheden for at scrolle i andre elementer på siden*/
 }
 
 .InstaKarrusel img {
   height: 320px;
   width: 280px;
   padding: 10px;
-  object-fit: cover; /*udfylder billederne i den defineret størrelse uden at strække billederne*/
+  object-fit: cover;
+  /*udfylder billederne i den defineret størrelse uden at strække billederne*/
 }
 
 /*THE ONE GIFT THAT HAS IT ALL billede styles*/
 
 #TheOneGift {
-  position: relative; /*Gør det muligt, at placere tekst/knapper oven på billedet*/
+  position: relative;
+  /*Gør det muligt, at placere tekst/knapper oven på billedet*/
 }
 
 #TheOneGift img {
@@ -355,7 +364,8 @@ så ringen altid følger den runde form, uanset browser)*/
 #TheOneGift h1 {
   color: var(--tekst-billeder);
   /* Tekstens placering */
-  position: absolute; /*Placerer teksten ovenpå billedet*/
+  position: absolute;
+  /*Placerer teksten ovenpå billedet*/
   left: 120px;
   right: 700px;
   top: 200px;
@@ -365,7 +375,8 @@ så ringen altid følger den runde form, uanset browser)*/
 /*FEATURES knap styles*/
 
 .FeaturesButton {
-  position: absolute; /*Placerer knappen ovenpå billedet*/
+  position: absolute;
+  /*Placerer knappen ovenpå billedet*/
   top: 400px;
   left: 550px;
   border-radius: 20px;
@@ -525,7 +536,8 @@ så ringen altid følger den runde form, uanset browser)*/
 /*THE ONE THAT BRINGS US TOGETHER billede styles*/
 
 #BringsUsTogether {
-  position: relative; /*Gør det muligt, at placere tekst/knapper oven på billedet*/
+  position: relative;
+  /*Gør det muligt, at placere tekst/knapper oven på billedet*/
 }
 
 #BringsUsTogether img {
@@ -540,7 +552,8 @@ så ringen altid følger den runde form, uanset browser)*/
   color: var(--tekst-billeder);
   text-shadow: 0 4px 12px var(--CTA);
   /* Tekstens placering */
-  position: absolute; /*Placerer teksten ovenpå billedet*/
+  position: absolute;
+  /*Placerer teksten ovenpå billedet*/
   left: 120px;
   right: 700px;
   top: 200px;
@@ -550,7 +563,8 @@ så ringen altid følger den runde form, uanset browser)*/
 /*THE ONE THAT BRINGS US TOGETHER knap styles*/
 
 .BuyNowButton {
-  position: absolute; /*Placerer knappen ovenpå billedet*/
+  position: absolute;
+  /*Placerer knappen ovenpå billedet*/
   top: 400px;
   left: 550px;
   border-radius: 20px;
