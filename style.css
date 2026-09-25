@@ -1,0 +1,673 @@
+/*fjern whitespace*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Farve variabler*/
+:root {
+  --bg-color: #fafafa;
+  --tekst-farve: #332721;
+  --tekst-billeder: #fafafa;
+  --CTA: #332721;
+  --CTA-tekst: #fafafa;
+  --Jacks-White: #e6d8bd;
+  --Crisp-Brown: #332721;
+  --Springing-Silver: #d8dbde;
+  --Sabbath-Black: #000000;
+  --Card-bg: #f5f5f5;
+  --Footer: #282119;
+}
+
+/*Tekst variabler*/
+
+/*Overskrifter på Hero og billeder*/
+h1 {
+  font-family: "Jura", sans-serif;
+  font-size: 72px;
+  font-weight: 200;
+}
+
+/*Overskrift på produktsider*/
+h2 {
+  font-family: "Jura", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+}
+
+/*Store CTA*/
+h3 {
+  font-family: "Jura", sans-serif;
+  font-size: 32px;
+  font-weight: 500;
+}
+
+/*Små CTA*/
+h4 {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/*Pricetags*/
+h5 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/*LUMINA one i lille*/
+h6 {
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/*Brødtekst*/
+p {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/*Baggrundsfarven sættes på hele siden*/
+body {
+  background-color: var(--bg-color);
+}
+
+/*Top bar*/
+#shop-sale {
+  align-content: center;
+  height: 40px;
+  background-color: var(--Footer);
+  color: var(--tekst-billeder);
+  padding-left: 24px;
+  font-family: "Manrope", sans-serif;
+  cursor: pointer;
+}
+
+/*Hero*/
+header {
+  height: 100vh;
+  background-color: var(--bg-color);
+
+  /* Herobilledet som baggrunden*/
+  background-image: url(images/lumina-by-day/hero-pic.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+/*Hero tekst styles*/
+
+#HeroText {
+  color: var(--tekst-billeder);
+  /* Tekstens placering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 120px;
+  padding-right: 700px;
+  padding-top: 100px;
+  padding-bottom: 224px;
+  text-align: left;
+}
+
+/*BUY NOW knap styles*/
+
+.HeroButton {
+  border-radius: 20px;
+  padding: 10px 56px;
+  background-color: var(--CTA);
+  color: var(--CTA-tekst);
+  font-family: "Jura", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*BUY NOW knap hover effekt*/
+
+.HeroButton:hover {
+  background-color: var(--CTA-tekst);
+  color: var(--CTA);
+  border-color: var(--CTA);
+}
+
+/*Menu linje*/
+#menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  gap: 20px;
+  padding: 80px;
+  padding-top: 16px;
+  cursor: pointer;
+}
+#menu img {
+  width: 20 px;
+  height: auto;
+  display: block;
+}
+
+/*HER INDSÆTTES FØRSTE PRODUKTSIDE*/
+
+#Produktside1 {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: var(--bg-color);
+  height: 830px;
+  width: 100%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.produktinfo {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 16px;
+}
+.container {
+  position: relative;
+  width: 40vw;
+  height: 70vh;
+}
+
+.headlineProduct {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  color: var(--tekst-farve);
+  gap: 10px;
+}
+
+.trustpilot {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 32px;
+  gap: 10px;
+  color: var(--tekst-farve);
+}
+
+.trustpilot p {
+  font-style: italic;
+}
+
+.trustpilot img {
+  width: 80px;
+  height: 20px;
+}
+
+.color,
+.color1,
+.color2,
+.color3,
+.color4 {
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+  transition: 0.4 ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.color.active {
+  opacity: 1;
+}
+
+.color1 {
+  background-image: url(images/speaker-colors/jacks-whiteu.bg.png);
+}
+
+.color2 {
+  background-image: url(images/speaker-colors/sabbath-black-u.bg.png);
+}
+
+.color3 {
+  background-image: url(images/speaker-colors/springing-silveru.bg.png);
+}
+
+.color4 {
+  background-image: url(images/speaker-colors/crisp-brownu.bg.png);
+}
+
+.ButtonContainer {
+  display: flex;
+  width: auto;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-top: 1px solid var(--tekst-farve);
+  border-bottom: 1px solid var(--tekst-farve);
+}
+
+.ButtonContainer > div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.button {
+  width: 32px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 0;
+  margin: 0px;
+}
+
+.button img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+/*Viser hvilken farve der er valgt lige nu (box-shadow i stedet for outline,
+så ringen altid følger den runde form, uanset browser)*/
+.button.active {
+  box-shadow:
+    0 0 0 2px var(--bg-color),
+    0 0 0 4px var(--tekst-farve);
+}
+
+.price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*HER INDSÆTTES LUMINATE YOURSELF INSTA SECTION*/
+
+#LuminateYourself {
+  height: 630px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--bg-color);
+}
+
+#LuminateYourself h1 {
+  color: var(--tekst-farve);
+  /* Overskriftens placering */
+  left: 120px;
+  right: 700px;
+  top: 200px;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-left: 80px;
+}
+
+#LuminateYourself h6 {
+  color: var(--tekst-farve);
+  /* Denne lille teksts placering */
+  left: 120px;
+  right: 700px;
+  top: 400px;
+  text-align: left;
+  margin-left: 80px;
+  margin-top: 24px;
+  margin-bottom: 14px;
+}
+
+.InstaKarrusel {
+  display: grid; /*lægger billederne på række*/
+  grid-auto-flow: column; /*lægger billederne vertikalt*/
+  grid-auto-columns: 19%; /*Bestemmer hvor mange procent af et billede skal fylde på siden*/
+  overflow-x: auto; /*stopper billederne i bare at fortsætte ud i "marginen"*/
+  overscroll-behavior-inline: contain; /*fjerner muligheden for at scrolle i andre elementer på siden*/
+}
+
+.InstaKarrusel img {
+  height: 320px;
+  width: 280px;
+  padding: 10px;
+  object-fit: cover; /*udfylder billederne i den defineret størrelse uden at strække billederne*/
+}
+
+/*THE ONE GIFT THAT HAS IT ALL billede styles*/
+
+#TheOneGift {
+  position: relative; /*Gør det muligt, at placere tekst/knapper oven på billedet*/
+}
+
+#TheOneGift img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*THE ONE GIFT THAT HAS IT ALL tekst styles*/
+
+#TheOneGift h1 {
+  color: var(--tekst-billeder);
+  /* Tekstens placering */
+  position: absolute; /*Placerer teksten ovenpå billedet*/
+  left: 120px;
+  right: 700px;
+  top: 200px;
+  text-align: left;
+}
+
+/*FEATURES knap styles*/
+
+.FeaturesButton {
+  position: absolute; /*Placerer knappen ovenpå billedet*/
+  top: 400px;
+  left: 550px;
+  border-radius: 20px;
+  padding: 10px 56px;
+  background-color: var(--CTA);
+  color: var(--CTA-tekst);
+  font-family: "Jura", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*FEATURES knap hover effekt*/
+.FeaturesButton:hover {
+  background-color: var(--CTA-tekst);
+  color: var(--CTA);
+  border-color: var(--CTA);
+}
+
+/*HER INDSÆTTES FEATURES SEKTION*/
+
+#Features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+  padding: 100px 80px;
+  background-color: var(--bg-color);
+}
+
+.features-image {
+  flex: 0 0 auto;
+  width: 40%;
+}
+
+.features-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.features-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 45%;
+  color: var(--tekst-farve);
+}
+
+.features-content h1 {
+  margin-bottom: 24px;
+}
+
+.accordion {
+  border-top: 1px solid var(--tekst-farve);
+}
+
+.accordion-item {
+  border-bottom: 1px solid var(--tekst-farve);
+}
+
+.accordion-item summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+
+.accordion-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-item .chevron {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid var(--tekst-farve);
+  border-bottom: 2px solid var(--tekst-farve);
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+}
+
+.accordion-item[open] .chevron {
+  transform: rotate(-135deg);
+}
+
+.accordion-item p {
+  padding-bottom: 20px;
+  color: var(--tekst-farve);
+}
+
+/*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
+
+.product-showcase {
+  padding: 80px;
+  background-color: var(--bg-color);
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 40px;
+  color: var(--tekst-farve);
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Card-bg);
+  padding: 16px;
+  color: var(--tekst-farve);
+}
+
+.product-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  margin-bottom: 16px;
+}
+
+.product-card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.product-price {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.product-price.on-sale {
+  color: #b23b3b;
+}
+
+.product-category {
+  margin-top: 4px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/*THE ONE THAT BRINGS US TOGETHER billede styles*/
+
+#BringsUsTogether {
+  position: relative; /*Gør det muligt, at placere tekst/knapper oven på billedet*/
+}
+
+#BringsUsTogether img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/*THE ONE THAT BRINGS US TOGETHER tekst styles*/
+
+#BringsUsTogether h1 {
+  color: var(--tekst-billeder);
+  text-shadow: 0 4px 12px var(--CTA);
+  /* Tekstens placering */
+  position: absolute; /*Placerer teksten ovenpå billedet*/
+  left: 120px;
+  right: 700px;
+  top: 200px;
+  text-align: left;
+}
+
+/*THE ONE THAT BRINGS US TOGETHER knap styles*/
+
+.BuyNowButton {
+  position: absolute; /*Placerer knappen ovenpå billedet*/
+  top: 400px;
+  left: 550px;
+  border-radius: 20px;
+  padding: 10px 56px;
+  background-color: var(--CTA);
+  color: var(--CTA-tekst);
+  font-family: "Jura", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/*THE ONE THAT BRINGS US TOGETHER knap hover*/
+
+.BuyNowButton:hover {
+  background-color: var(--CTA-tekst);
+  color: var(--CTA);
+  border-color: var(--CTA);
+}
+
+/*HER INDSÆTTES ANDEN PRODUKTSIDE*/
+/*Produktside2 genbruger nu nøjagtig samme opbygning som Produktside1
+(samme .container/.color-billeder-princip og samme .button-knapper),
+så de to produktsider ser 100% ens ud - kun tekst/billeder er forskellige*/
+
+#Produktside2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 80px;
+  background-color: var(--bg-color);
+  height: 830px;
+  width: 100%;
+  margin-top: 10px;
+  align-items: center;
+}
+
+.colorB,
+.colorB1,
+.colorB2,
+.colorB3,
+.colorB4 {
+  opacity: 0;
+  inset: 0;
+  position: absolute;
+  transition: 0.4 ease;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+
+.colorB1 {
+  background-image: url(images/speaker-colors/jacks-whiteu.bg.png);
+}
+
+.colorB2 {
+  background-image: url(images/speaker-colors/sabbath-black-u.bg.png);
+}
+
+.colorB3 {
+  background-image: url(images/speaker-colors/springing-silveru.bg.png);
+}
+
+.colorB4 {
+  background-image: url(images/speaker-colors/crisp-brownu.bg.png);
+}
+
+.colorB.active {
+  opacity: 1;
+}
+
+/*HER INDSÆTTES THE ONE THATS GOING AWAY SEKTION*/
+/* se .product-showcase, .section-header, .product-grid, .product-card ovenfor */
+
+/*HER INDSÆTTES FOOTER*/
+
+#Footer {
+  background-color: var(--Footer);
+  color: var(--tekst-billeder);
+  padding: 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.footer-col h4 {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 20px;
+}
+
+.footer-col ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-col a {
+  color: var(--tekst-billeder);
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  opacity: 0.75;
+}
+
+.footer-col a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  margin-top: 100px;
+  font-size: 13px;
+  opacity: 0.6;
+}
