@@ -81,14 +81,14 @@ body {
 header {
   position: relative;
   height: 100vh;
+  padding-top: 85px;
   background-color: var(--bg-color);
 
   /* Herobilledet som baggrunden*/
   background-image: url(images/lumina-by-day/hero-billede.webp);
   background-repeat: no-repeat;
-  background-attachment: fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center 85px;
 }
 
 /* Navigation over the hero image */
@@ -100,7 +100,9 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 24px 80px;
+  padding: 20px 85px;
+  background-color: var(--Crisp-Brown);
+
 }
 
 .logo img {
@@ -171,7 +173,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  gap: 20px;
+  gap: 35px;
   margin-left: auto;
   cursor: pointer;
 }
