@@ -94,13 +94,51 @@ header {
 }
 
 .hero {
-
+  position: relative;
   height: calc(100vh - 85px);
   background-image: url(images/lumina-by-day/hero-billede.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: relative;
+  
+}
+
+.hero-scroll {
+  position: absolute;
+  
+    left: 50%;
+    bottom: 25px;
+  
+    transform: translateX(-50%);
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  
+    color: var(--tekst-billeder);
+    text-align: center;
+    z-index: 3;
+  
+}
+
+.hero-scroll p {
+    margin: 0;
+      font-family: "Jura", sans-serif;
+      font-size: 16px;
+      font-weight: 400;
+    
+      white-space: nowrap;
+}
+
+.hero-scroll-arrow {
+  width: 12px;
+  height: 12px;
+
+  border-right: 1px solid var(--tekst-billeder);
+  border-bottom: 1px solid var(--tekst-billeder);
+
+  transform: rotate(45deg);
 }
 
 
@@ -340,6 +378,35 @@ p.hero-subtitle {
   flex-direction: column;
   color: var(--tekst-farve);
   gap: 16px;
+}
+
+.read-more {
+  grid-column: 1 / -1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 14px;
+  margin-top: 40px;
+
+  color: var(--tekst-farve);
+}
+
+.read-more p {
+  font-family: "Jura", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.down-arrow {
+  width: 12px;
+  height: 12px;
+
+  border-right: 1px solid var(--tekst-farve);
+  border-bottom: 1px solid var(--tekst-farve);
+
+  transform: rotate(45deg);
 }
 
 .trustpilot {
