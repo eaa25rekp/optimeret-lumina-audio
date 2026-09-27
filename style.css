@@ -76,19 +76,10 @@ body {
   background-color: var(--bg-color);
 }
 
-/*Top bar*/
-#shop-sale {
-  align-content: center;
-  height: 40px;
-  background-color: var(--Footer);
-  color: var(--tekst-billeder);
-  padding-left: 24px;
-  font-family: "Manrope", sans-serif;
-  cursor: pointer;
-}
 
 /*Hero*/
 header {
+  position: relative;
   height: 100vh;
   background-color: var(--bg-color);
 
@@ -98,6 +89,43 @@ header {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
+}
+
+/* Navigation over the hero image */
+.hero-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 24px 80px;
+}
+
+.logo img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  margin-left: 72px;
+}
+
+.nav-links a {
+  color: var(--tekst-billeder);
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 /*Hero tekst styles*/
@@ -141,17 +169,56 @@ header {
 #menu {
   display: flex;
   flex-direction: row;
-  justify-content: left;
+  align-items: center;
+  justify-content: flex-end;
   gap: 20px;
-  padding: 80px;
-  padding-top: 16px;
+  margin-left: auto;
   cursor: pointer;
 }
 
 #menu img {
-  width: 20 px;
+  width: 20px;
   height: auto;
   display: block;
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+
+  color: var(--tekst-billeder);
+  text-decoration: none;
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+}
+
+@media (max-width: 700px) {
+  .hero-nav {
+    padding: 20px 24px;
+  }
+
+  .logo img {
+    width: 96px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  #menu {
+    gap: 12px;
+  }
+
+  #menu img {
+    width: 18px;
+  }
 }
 
 /*HER INDSÆTTES FØRSTE PRODUKTSIDE*/
