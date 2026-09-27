@@ -153,11 +153,7 @@ p.hero-subtitle {
   margin-bottom: 32px;
 }
 
-.product-label {
-  font-family: "Jura", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
+
 
 /*READ MORE knap styles*/
 
@@ -246,14 +242,38 @@ p.hero-subtitle {
   background-color: var(--bg-color);
   min-height: 830px;
   width: 100%;
+  align-items: center;
+}
 
+#Produktside1 .container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 650px;
+  justify-self: center;
 }
 
 .produktinfo {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 560px;
   gap: 32px;
-  padding: 16px;
+
+}
+
+.product-label {
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-features {
+  padding-left: 24px;
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+
 }
 
 .container {
@@ -265,9 +285,8 @@ p.hero-subtitle {
 .headlineProduct {
   display: flex;
   flex-direction: column;
-  padding-bottom: 32px;
   color: var(--tekst-farve);
-  gap: 10px;
+  gap: 16px;
 }
 
 .trustpilot {
@@ -292,13 +311,16 @@ p.hero-subtitle {
 .color2,
 .color3,
 .color4 {
-  opacity: 0;
-  inset: 0;
   position: absolute;
-  transition: 0.4 ease;
-  background-size: cover;
+  inset: 0;
+
+  opacity: 0;
+
+  background-size: contain;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: center;
+
+  transition: opacity 0.4s ease;
 }
 
 .color.active {
