@@ -131,15 +131,16 @@ header {
 
 #HeroText {
   color: var(--tekst-billeder);
-  /* Tekstens placering */
+  position: absolute;
+  left: 80px;
+  top: 50%;
+  transform: translateY(-50%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 120px;
-  padding-right: 700px;
-  padding-top: 100px;
-  padding-bottom: 224px;
+
+  max-width: 650px;
   text-align: left;
 }
 
