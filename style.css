@@ -118,7 +118,7 @@ header {
 
 .nav-links a {
   color: var(--tekst-billeder);
-  font-family: "Manrope", sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 14px;
   font-weight: 600;
   text-decoration: none;
@@ -192,7 +192,7 @@ header {
 
   color: var(--tekst-billeder);
   text-decoration: none;
-  font-family: "Manrope", sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 14px;
   font-weight: 500;
 }
