@@ -276,6 +276,59 @@ p.hero-subtitle {
 
 }
 
+/*HER INDSÆTTES ACCORDION STYLES TIL PRODUKTSIDE1*/
+
+.product-accordion {
+  width: 100%;
+}
+
+.product-accordion details {
+  border-bottom: 1px solid var(--tekst-farve);
+}
+
+.product-accordion summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 18px 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+
+  cursor: pointer;
+}
+
+.product-accordion p {
+  padding: 0 0 18px;
+
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.key-elements-list {
+  padding: 16px 20px 20px 28px;
+  margin: 0;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  line-height: 1.4;
+
+  color: var(--tekst-farve);
+}
+
+.key-elements-list li {
+  margin-bottom: 6px;
+}
+
+.key-elements-list li:last-child {
+  margin-bottom: 0;
+}
+
+.key-elements-list strong {
+  font-weight: 700;
+}
+
 .container {
   position: relative;
   width: 40vw;
