@@ -79,31 +79,28 @@ body {
 
 /*Hero*/
 header {
-  position: relative;
   height: 100vh;
-  padding-top: 85px;
-  background-color: var(--bg-color);
+}
 
-  /* Herobilledet som baggrunden*/
+.hero-nav {
+  height: 85px;
+  width: 100%;
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  background-color: var(--Crisp-Brown);
+}
+
+.hero {
+
+  height: calc(100vh - 85px);
   background-image: url(images/lumina-by-day/hero-billede.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center 85px;
+  background-position: center;
+  position: relative;
 }
 
-/* Navigation over the hero image */
-.hero-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  padding: 0 80px;
-  background-color: var(--Crisp-Brown);
-
-}
 
 .logo img {
   display: block;
