@@ -52,15 +52,16 @@
     <section id="HeroText">
       <h1>Bring the sound with you</h1>
 
-      <h2>Meet Lumina One - a Bluetooth speaker made for every moment.
-      </h2>
+      <p class="hero-subtitle">
+        Meet Lumina One - a Bluetooth speaker made for every moment.
+      </p>
+
       <button class="HeroButton">READ MORE</button>
     </section>
 
-    </section>
-  </header>
-  <main>
     <section id="Produktside1">
+
+      <!-- Product image -->
       <div class="container">
         <div class="color active color1"></div>
         <div class="color color2"></div>
@@ -68,52 +69,97 @@
         <div class="color color4"></div>
       </div>
 
+
+      <!-- Product information -->
       <div class="produktinfo">
+
         <div class="headlineProduct">
-          <h6>LUMINA one</h6>
+          <p class="product-label">LUMINA one</p>
+
           <h2>Portable Bluetooth Speaker</h2>
+
           <p>
-            A small speaker with big sound, a sleek design, and up to 18 hours
-            of playtime.
+            A small speaker with big sound, a sleek design and incredible features:
           </p>
+
+          <ul class="product-features">
+            <li>18 hours of playtime</li>
+            <li>Up to 100 dB</li>
+            <li>Listen together with social connect</li>
+          </ul>
         </div>
-        <div class="trustpilot">
-          <img src="images/trustpilot-stars.svg" alt="stars" />
-          <p>
-            "LUMINA one is your perfect companion for beach days, park picnics
-            or cozy nights"
-          </p>
-          <h6>J. Smith on LUMINA audio's Trustpilot</h6>
+
+
+        <!-- Accordions -->
+        <div class="product-accordion">
+
+          <details>
+            <summary>Product information</summary>
+            <p>
+              LUMINA one is a portable Bluetooth speaker designed for everyday listening.
+            </p>
+          </details>
+
+          <details>
+            <summary>Key elements</summary>
+            <p>
+              Portable design, long battery life and social connect.
+            </p>
+          </details>
+
         </div>
+
+
+        <!-- Colour selector -->
         <div class="ButtonContainer">
+
           <p id="productName">Jacks White</p>
+
           <div>
-            <button class="button white" id="white">
-              <img src="images/speaker-colors/elipse-white.svg" alt="Jacks White" />
+            <button class="button white" id="white" aria-label="Jacks White">
+              <img src="images/speaker-colors/elipse-white.svg" alt="">
             </button>
 
-            <button class="button black" id="black">
-              <img src="images/speaker-colors/ellipse-black.svg" alt="Black Sabbath" />
-            </button>
-            <button class="button silver" id="silver">
-              <img src="images/speaker-colors/ellipse-silver.svg" alt="Springing Silver" />
+            <button class="button black" id="black" aria-label="Sabbath Black">
+              <img src="images/speaker-colors/ellipse-black.svg" alt="">
             </button>
 
-            <button class="button brown" id="brown">
-              <img src="images/speaker-colors/ellipse-brown.svg" alt="Crisp Brown" />
+            <button class="button silver" id="silver" aria-label="Springing Silver">
+              <img src="images/speaker-colors/ellipse-silver.svg" alt="">
+            </button>
+
+            <button class="button brown" id="brown" aria-label="Crisp Brown">
+              <img src="images/speaker-colors/ellipse-brown.svg" alt="">
             </button>
           </div>
+
         </div>
+
+
+        <!-- Price + cart -->
         <div class="price">
-          <button class="HeroButton">BUY NOW</button>
           <p>1.995 DKK</p>
+          <button class="HeroButton">ADD TO CART</button>
         </div>
+
       </div>
+
     </section>
 
+    <div class="trustpilot">
+      <img src="images/trustpilot-stars.svg" alt="stars" />
+      <p>
+        "LUMINA one is your perfect companion for beach days, park picnics
+        or cozy nights"
+      </p>
+      <h6>J. Smith on LUMINA audio's Trustpilot</h6>
+    </div>
+
     <section id="LuminateYourself">
-      <h1>Luminate yourself</h1>
-      <h6>Tag us at @Luminaaudio on Instagram to share your moment</h6>
+      <h2>Luminate yourself</h2>
+      <p class="section-subtitle">
+        Tag us at @Luminaaudio on Instagram to share your moment
+      </p>
 
       <div class="InstaKarrusel">
         <img src="images/lumina-insta/luminakitchen.webp" alt="Instagram billede" />
@@ -129,7 +175,7 @@
 
     <section id="TheOneGift">
       <img src="images/lumina-by-day/gave-billede.webp" alt="THE ONE GIFT THAT HAS IT ALL" />
-      <h1>The one gift that has it all</h1>
+      <h2>The one gift that has it all</h2>
       <button class="FeaturesButton">FEATURES</button>
     </section>
 
@@ -139,7 +185,7 @@
       </div>
       <div class="features-content">
         <h6>LUMINA one</h6>
-        <h1>Features</h1>
+        <h2>Features</h2>
 
         <div class="accordion">
           <details class="accordion-item" open>
@@ -207,7 +253,7 @@
 
     <section id="JustOneMore" class="product-showcase">
       <div class="section-header">
-        <h1>Just one more?</h1>
+        <h2>Just one more?</h2>
         <p>Explore our other products and find your perfect match</p>
       </div>
 
@@ -314,7 +360,7 @@
 
     <section id="GoingAway" class="product-showcase">
       <div class="section-header">
-        <h1>The one thats going away</h1>
+        <h2>The one thats going away</h2>
         <p>
           Check out our clearance sale featuring products that are going out
           of production
@@ -433,7 +479,7 @@
         <p>&copy; LUMINA AUDIO 2025</p>
       </div>
     </section>
-  </main>
+    </main>
 </body>
 
 </html>

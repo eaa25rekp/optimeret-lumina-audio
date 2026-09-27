@@ -146,6 +146,19 @@ header {
   text-align: left;
 }
 
+p.hero-subtitle {
+  font-family: "Jura", sans-serif;
+  font-size: 38px;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.product-label {
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+}
+
 /*READ MORE knap styles*/
 
 .HeroButton {
@@ -226,14 +239,14 @@ header {
 /*HER INDSÆTTES FØRSTE PRODUKTSIDE*/
 
 #Produktside1 {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
   padding: 80px;
   background-color: var(--bg-color);
-  height: 830px;
+  min-height: 830px;
   width: 100%;
-  margin-top: 10px;
-  align-items: center;
+
 }
 
 .produktinfo {
