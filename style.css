@@ -27,6 +27,7 @@ h1 {
   font-family: "Jura", sans-serif;
   font-size: 72px;
   font-weight: 200;
+  margin-bottom: 28px;
 }
 
 /*Overskrift på produktsider*/
@@ -34,6 +35,7 @@ h2 {
   font-family: "Jura", sans-serif;
   font-size: 38px;
   font-weight: 500;
+  margin-bottom: 32px;
 }
 
 /*Store CTA*/
@@ -144,7 +146,7 @@ header {
   text-align: left;
 }
 
-/*BUY NOW knap styles*/
+/*READ MORE knap styles*/
 
 .HeroButton {
   border-radius: 20px;
@@ -157,7 +159,7 @@ header {
   cursor: pointer;
 }
 
-/*BUY NOW knap hover effekt*/
+/*READ MORE knap hover effekt*/
 
 .HeroButton:hover {
   background-color: var(--CTA-tekst);
