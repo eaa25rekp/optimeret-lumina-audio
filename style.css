@@ -100,7 +100,7 @@ header {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 20px 85px;
+  padding: 0 80px;
   background-color: var(--Crisp-Brown);
 
 }
