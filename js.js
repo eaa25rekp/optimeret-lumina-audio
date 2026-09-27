@@ -17,6 +17,15 @@ let activeSlide = 3;
 //liste over de fire farveknapper, så vi kan vise hvilken der er valgt
 const buttons = [whiteBtn, blackBtn, silverBtn, brownBtn];
 
+const productNames = [
+  "Jacks White",
+  "Sabbath Black",
+  "Springing Silver",
+  "Crisp Brown",
+];
+
+const productName = document.getElementById("productName");
+
 //Gør det muligt at skifte til et bestemt billede ved at gøre billedet aktivt/ikke-aktivt
 function setActiveSlide(index) {
   slides.forEach((slide) => slide.classList.remove("active"));
@@ -25,6 +34,8 @@ function setActiveSlide(index) {
   //Sætter en "selector" (ring) om den knap, der er valgt
   buttons.forEach((btn) => btn.classList.remove("active"));
   buttons[index].classList.add("active");
+
+  productName.textContent = productNames[index];
 }
 
 //Knap events, som bestemmer at når en knap bliver klikket på vises et bestemt billede

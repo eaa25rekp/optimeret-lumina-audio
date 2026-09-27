@@ -448,7 +448,10 @@ så ringen altid følger den runde form, uanset browser)*/
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: 16px;
 }
+
 
 /*HER INDSÆTTES LUMINATE YOURSELF INSTA SECTION*/
 
