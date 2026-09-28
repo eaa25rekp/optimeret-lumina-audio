@@ -409,22 +409,6 @@ p.hero-subtitle {
   transform: rotate(45deg);
 }
 
-.trustpilot {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 32px;
-  gap: 10px;
-  color: var(--tekst-farve);
-}
-
-.trustpilot p {
-  font-style: italic;
-}
-
-.trustpilot img {
-  width: 80px;
-  height: 20px;
-}
 
 .color,
 .color1,
@@ -798,6 +782,186 @@ så ringen altid følger den runde form, uanset browser)*/
   border-color: var(--CTA);
 }
 
+/* ========================================
+   TRUSTPILOT REVIEW SECTION
+======================================== */
+
+#TrustpilotSection {
+  position: relative;
+
+  width: 100%;
+  min-height: 770px;
+
+  background-image: url("images/trustpilot/trustpilot.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: var(--tekst-billeder);
+}
+
+
+/* ---------- HEADING ---------- */
+
+.trustpilot-heading {
+  position: absolute;
+
+  top: 65px;
+  left: 115px;
+
+  z-index: 2;
+}
+
+.trustpilot-heading .product-label {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-bottom: 14px;
+}
+
+.trustpilot-heading h2 {
+  font-family: "Jura", sans-serif;
+  font-size: 64px;
+  font-weight: 300;
+  line-height: 1;
+
+  margin: 0 0 12px;
+}
+
+.trustpilot-subtitle {
+  font-family: "Jura", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+
+/* ---------- WHITE REVIEW CARD ---------- */
+
+.review-card {
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -45%);
+
+  width: 600px;
+  max-width: calc(100% - 48px);
+
+  padding: 50px 40px;
+
+  background-color: var(--bg-color);
+  color: var(--tekst-farve);
+
+  border-radius: 20px;
+}
+
+
+/* Stars inside review */
+
+.review-stars {
+  font-size: 30px;
+  line-height: 1;
+
+  margin-bottom: 20px;
+}
+
+
+/* Review text */
+
+.review-text {
+  font-family: "Manrope", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+
+/* Alice / Trustpilot */
+
+.review-author {
+  margin-top: 14px;
+
+  text-align: right;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+
+/* ---------- BOTTOM-RIGHT RATING ---------- */
+
+.trustpilot-rating {
+  position: absolute;
+
+  right: 110px;
+  bottom: 60px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--tekst-billeder);
+}
+
+
+.rating-number {
+  font-family: "Jura", sans-serif;
+  font-size: 34px;
+  font-weight: 400;
+
+  margin-bottom: 8px;
+}
+
+
+.rating-stars {
+  font-size: 28px;
+  line-height: 1;
+}
+
+
+.rating-reviews {
+  margin-top: 6px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 800px) {
+
+  #TrustpilotSection {
+    min-height: 800px;
+  }
+
+  .trustpilot-heading {
+    top: 50px;
+    left: 30px;
+  }
+
+  .trustpilot-heading h2 {
+    font-size: 46px;
+  }
+
+  .trustpilot-subtitle {
+    font-size: 22px;
+  }
+
+  .review-card {
+    width: calc(100% - 60px);
+    padding: 35px 30px;
+  }
+
+  .trustpilot-rating {
+    right: 30px;
+    bottom: 35px;
+  }
+}
 
 /*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
 
