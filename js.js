@@ -1,5 +1,4 @@
 //opretter forbindelse til mit body element i html
-const body = document.body;
 
 //henter mine elementer/billeder med klassen "color" og definerer dem som en liste/"slides"
 const slides = document.querySelectorAll(".color");
@@ -9,10 +8,6 @@ const whiteBtn = document.getElementById("white");
 const blackBtn = document.getElementById("black");
 const silverBtn = document.getElementById("silver");
 const brownBtn = document.getElementById("brown");
-
-//opretter en variabel med navnet "activeSlide", og fortæller at der er 4 aktive slides i den (0 til 3)
-
-let activeSlide = 3;
 
 //liste over de fire farveknapper, så vi kan vise hvilken der er valgt
 const buttons = [whiteBtn, blackBtn, silverBtn, brownBtn];
@@ -32,8 +27,13 @@ function setActiveSlide(index) {
   slides[index].classList.add("active");
 
   //Sætter en "selector" (ring) om den knap, der er valgt
-  buttons.forEach((btn) => btn.classList.remove("active"));
+  buttons.forEach((btn) => {
+    btn.classList.remove("active");
+    btn.setAttribute("aria-pressed", "false");
+  });
+
   buttons[index].classList.add("active");
+  buttons[index].setAttribute("aria-pressed", "true");
 
   productName.textContent = productNames[index];
 }
@@ -73,8 +73,13 @@ function setActiveSlideB(index) {
   slidesB[index].classList.add("active");
 
   //Sætter en "selector" (ring) om den knap, der er valgt
-  buttonsB.forEach((btn) => btn.classList.remove("active"));
+  buttonsB.forEach((btn) => {
+    btn.classList.remove("active");
+    btn.setAttribute("aria-pressed", "false");
+  });
+
   buttonsB[index].classList.add("active");
+  buttonsB[index].setAttribute("aria-pressed", "true");
 
   productName2.textContent = colorNames2[index];
 }

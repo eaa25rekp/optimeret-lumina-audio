@@ -38,33 +38,13 @@ h2 {
   margin-bottom: 32px;
 }
 
-/*Store CTA*/
+
 h3 {
   font-family: "Jura", sans-serif;
   font-size: 32px;
   font-weight: 500;
 }
 
-/*Små CTA*/
-h4 {
-  font-family: "Jura", sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-}
-
-/*Pricetags*/
-h5 {
-  font-family: "Manrope", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-}
-
-/*LUMINA one i lille*/
-h6 {
-  font-family: "Jura", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-}
 
 /*Brødtekst*/
 p {
@@ -78,11 +58,16 @@ body {
   background-color: var(--bg-color);
 }
 
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
 
 /*Hero*/
-header {
-  height: 100vh;
-}
+
 
 .hero-nav {
   height: 85px;
@@ -148,24 +133,6 @@ header {
   height: auto;
 }
 
-.nav-links {
-  display: flex;
-  gap: 32px;
-  margin-left: 72px;
-}
-
-.nav-links a {
-  color: var(--tekst-billeder);
-  font-family: "Jura", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  text-decoration: none;
-}
-
-.nav-links a:hover {
-  text-decoration: underline;
-  text-underline-offset: 4px;
-}
 
 /*Hero tekst styles*/
 
@@ -214,6 +181,8 @@ p.hero-subtitle {
   border-color: var(--CTA);
 }
 
+
+
 /*Menu linje*/
 #menu {
   display: flex;
@@ -222,7 +191,6 @@ p.hero-subtitle {
   justify-content: flex-end;
   gap: 35px;
   margin-left: auto;
-  cursor: pointer;
 }
 
 #menu img {
@@ -257,9 +225,6 @@ p.hero-subtitle {
     width: 96px;
   }
 
-  .nav-links {
-    display: none;
-  }
 
   #menu {
     gap: 12px;
@@ -280,7 +245,6 @@ p.hero-subtitle {
   background-color: var(--bg-color);
   min-height: 830px;
   width: 100%;
-  align-items: center;
 }
 
 #Produktside1 .container {
@@ -394,11 +358,6 @@ p.hero-subtitle {
   font-weight: 700;
 }
 
-.container {
-  position: relative;
-  width: 40vw;
-  height: 70vh;
-}
 
 .headlineProduct {
   display: flex;
@@ -437,20 +396,13 @@ p.hero-subtitle {
 }
 
 
-.color,
-.color1,
-.color2,
-.color3,
-.color4 {
+.color {
   position: absolute;
   inset: 0;
-
   opacity: 0;
-
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
   transition: opacity 0.4s ease;
 }
 
@@ -519,6 +471,7 @@ så ringen altid følger den runde form, uanset browser)*/
   box-shadow:
     0 0 0 2px var(--bg-color),
     0 0 0 4px var(--tekst-farve);
+
 }
 
 .price {
@@ -641,20 +594,6 @@ så ringen altid følger den runde form, uanset browser)*/
   color: var(--tekst-billeder);
 }
 
-.BuynowButton {
-  position: absolute;
-  /*Placerer knappen ovenpå billedet*/
-  top: 400px;
-  left: 550px;
-  border-radius: 20px;
-  padding: 10px 56px;
-  background-color: var(--CTA);
-  color: var(--CTA-tekst);
-  font-family: "Jura", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  cursor: pointer;
-}
 
 .gift-content .BuyNowButton {
   position: static;
@@ -673,7 +612,7 @@ så ringen altid følger den runde form, uanset browser)*/
 }
 
 /*BUY NOW knap hover effekt*/
-.BuynowButton:hover {
+.gift-content .BuyNowButton:hover {
   background-color: var(--CTA-tekst);
   color: var(--CTA);
   border-color: var(--CTA);
@@ -1099,6 +1038,11 @@ så ringen altid følger den runde form, uanset browser)*/
 
 .product-grid::-webkit-scrollbar {
   display: none;
+}
+
+.product-grid:focus-visible {
+  outline: 3px solid var(--tekst-farve);
+  outline-offset: 4px;
 }
 
 .product-card {

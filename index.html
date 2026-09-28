@@ -21,6 +21,7 @@
 </head>
 
 <body>
+
   <header id="top">
     <nav class="hero-nav" aria-label="Main navigation">
       <a class="logo" href="#top" aria-label="LUMINA home">
@@ -30,45 +31,53 @@
       <section id="menu" aria-label="Quick actions">
 
         <a href="#" class="nav-item">
-          <img src="images/menu-icons/search.svg" alt="Search icon">
+          <img src="images/menu-icons/search.svg" alt="">
           <span>Search</span>
         </a>
 
         <a href="#" class="nav-item">
-          <img src="images/menu-icons/profil.svg" alt="Profile icon">
+          <img src="images/menu-icons/profil.svg" alt="">
           <span>Profile</span>
         </a>
 
         <a href="#" class="nav-item">
-          <img src="images/menu-icons/cart.svg" alt="Cart icon">
+          <img src="images/menu-icons/cart.svg" alt="">
           <span>Cart</span>
         </a>
 
         <a href="#" class="nav-item">
-          <img src="images/menu-icons/menu.svg" alt="Menu icon">
+          <img src="images/menu-icons/menu.svg" alt="">
           <span>Menu</span>
         </a>
 
       </section>
     </nav>
+
+  </header>
+
+
+  <main>
+
+    <!-- Hero Section -->
+
     <section class="hero">
 
+      <div id="HeroText">
+        <h1>Bring the sound with you</h1>
+
+        <p class="hero-subtitle">
+          Meet Lumina One - a Bluetooth speaker made for every moment.
+        </p>
+
+        <button class="HeroButton">READ MORE</button>
+      </div>
+
+      <div class="hero-scroll">
+        <p>Scroll to explore the Lumina One speaker</p>
+        <span class="hero-scroll-arrow" aria-hidden="true"></span>
+      </div>
+
     </section>
-
-    <section id="HeroText">
-      <h1>Bring the sound with you</h1>
-
-      <p class="hero-subtitle">
-        Meet Lumina One - a Bluetooth speaker made for every moment.
-      </p>
-
-      <button class="HeroButton">READ MORE</button>
-    </section>
-
-    <div class="hero-scroll">
-      <p>Scroll to explore the Lumina One speaker</p>
-      <span class="hero-scroll-arrow"></span>
-    </div>
 
 
     <section id="Produktside1">
@@ -172,19 +181,19 @@
           <p id="productName">Jacks White</p>
 
           <div>
-            <button class="button white" id="white" aria-label="Jacks White">
+            <button class="button white" id="white" aria-label="Jacks White" aria-pressed="true">
               <img src="images/speaker-colors/elipse-white.svg" alt="">
             </button>
 
-            <button class="button black" id="black" aria-label="Sabbath Black">
+            <button class="button black" id="black" aria-label="Sabbath Black" aria-pressed="false">
               <img src="images/speaker-colors/ellipse-black.svg" alt="">
             </button>
 
-            <button class="button silver" id="silver" aria-label="Springing Silver">
+            <button class="button silver" id="silver" aria-label="Springing Silver" aria-pressed="false">
               <img src="images/speaker-colors/ellipse-silver.svg" alt="">
             </button>
 
-            <button class="button brown" id="brown" aria-label="Crisp Brown">
+            <button class="button brown" id="brown" aria-label="Crisp Brown" aria-pressed="false">
               <img src="images/speaker-colors/ellipse-brown.svg" alt="">
             </button>
           </div>
@@ -201,7 +210,7 @@
       </div>
       <div class="read-more">
         <p>Read more about the speakers features down below</p>
-        <span class="down-arrow"></span>
+        <span class="down-arrow" aria-hidden="true"></span>
       </div>
 
     </section>
@@ -335,9 +344,10 @@
         <p>Explore our other products and find your perfect match</p>
       </div>
 
-      <div class="product-grid">
+      <div class="product-grid" tabindex="0" aria-label="More Lumina Audio products">
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/springing-silver-sqaure-u.bg.webp" alt="NovaBeat" />
+          <img src="images/just-one-more-karrusel/springing-silver-sqaure-u.bg.webp"
+            alt="NovaBeat portable speaker in silver" />
           <div class="product-card-row">
             <h3>NovaBeat</h3>
             <p class="product-price">3000 DKK</p>
@@ -346,7 +356,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/crips-brown-speakers-u.bg.webp" alt="EmberSound" />
+          <img src="images/just-one-more-karrusel/crips-brown-speakers-u.bg.webp"
+            alt="EmberSound floorstanding speaker in crisp brown" />
           <div class="product-card-row">
             <h3>EmberSound</h3>
             <p class="product-price">20.000 DKK</p>
@@ -355,7 +366,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/jacks-white-in-ear-u.bg.webp" alt="EchoCore" />
+          <img src="images/just-one-more-karrusel/jacks-white-in-ear-u.bg.webp"
+            alt="EchoCore in-ear headphones in jacks white" />
           <div class="product-card-row">
             <h3>EchoCore</h3>
             <p class="product-price">999 DKK</p>
@@ -364,7 +376,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/sabbath-black-small-u.bg.webp" alt="SonicFlux" />
+          <img src="images/just-one-more-karrusel/sabbath-black-small-u.bg.webp"
+            alt="SonicFlux portable speaker in sabbath black" />
           <div class="product-card-row">
             <h3>SonicFlux</h3>
             <p class="product-price">1500 DKK</p>
@@ -373,7 +386,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/springing-silver-headphones-u.bg.webp" alt="AuraOne" />
+          <img src="images/just-one-more-karrusel/springing-silver-headphones-u.bg.webp"
+            alt="AuraOne wireless headphones in springing silver" />
           <div class="product-card-row">
             <h3>AuraOne</h3>
             <p class="product-price">1495 DKK</p>
@@ -382,7 +396,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/crisp-brown-soundsbar-u.bg.webp" alt="WaveShift" />
+          <img src="images/just-one-more-karrusel/crisp-brown-soundsbar-u.bg.webp"
+            alt="WaveShift soundbar in crisp brown" />
           <div class="product-card-row">
             <h3>WaveShift</h3>
             <p class="product-price">9000 DKK</p>
@@ -391,7 +406,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/jacks-white-speaker-u.bg.webp" alt="CozyTone" />
+          <img src="images/just-one-more-karrusel/jacks-white-speaker-u.bg.webp"
+            alt="CozyTone transportable speaker in jacks white" />
           <div class="product-card-row">
             <h3>CozyTone</h3>
             <p class="product-price">3999 DKK</p>
@@ -400,7 +416,8 @@
         </div>
 
         <div class="product-card">
-          <img src="images/just-one-more-karrusel/sabbath-black-sport-u.bg.webp" alt="PulseOne" />
+          <img src="images/just-one-more-karrusel/sabbath-black-sport-u.bg.webp"
+            alt="PulseOne sporty in-ear headphones in sabbath black" />
           <div class="product-card-row">
             <h3>PulseOne</h3>
             <p class="product-price">799 DKK</p>
@@ -439,80 +456,80 @@
       </p>
 
       <div class="InstaKarrusel">
-        <img src="images/lumina-insta/luminakitchen.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/metro.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/train.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/gettingready.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/kitchen.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/in-the-park.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/stuen.webp" alt="Instagram billede" />
-        <img src="images/lumina-insta/river.webp" alt="Instagram billede" />
+        <img src="images/lumina-insta/luminakitchen.webp" alt="" />
+        <img src="images/lumina-insta/metro.webp" alt="" />
+        <img src="images/lumina-insta/train.webp" alt="" />
+        <img src="images/lumina-insta/gettingready.webp" alt="" />
+        <img src="images/lumina-insta/kitchen.webp" alt="" />
+        <img src="images/lumina-insta/in-the-park.webp" alt="" />
+        <img src="images/lumina-insta/stuen.webp" alt="" />
+        <img src="images/lumina-insta/river.webp" alt="" />
       </div>
     </section>
 
+  </main>
 
 
-
-    <section id="Footer">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <h2>CUSTOMER CARE</h2>
-          <ul>
-            <li><a href="#">Shipping and delivery</a></li>
-            <li><a href="#">Returns</a></li>
-            <li><a href="#">Product support</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">FAQ</a></li>
-            <li><a href="#">Find store</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h2>OUR POLICIES</h2>
-          <ul>
-            <li><a href="#">Accessibility</a></li>
-            <li><a href="#">Counterfeit</a></li>
-            <li><a href="#">Change cookie settings</a></li>
-            <li><a href="#">Cookie policy</a></li>
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Policies and terms</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h2>OUR COMPANY</h2>
-          <ul>
-            <li><a href="#">Sustainability</a></li>
-            <li><a href="#">Investors</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Press</a></li>
-            <li><a href="#">Custom integration</a></li>
-            <li><a href="#">Become a sales partner</a></li>
-            <li><a href="#">Contact us</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h2>SOCIAL LINKS</h2>
-          <ul>
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">X</a></li>
-            <li><a href="#">Youtube</a></li>
-            <li><a href="#">TikTok</a></li>
-            <li><a href="#">Pinterest</a></li>
-          </ul>
-        </div>
-
-
+  <footer id="Footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h2>CUSTOMER CARE</h2>
+        <ul>
+          <li><a href="#">Shipping and delivery</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Product support</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Find store</a></li>
+        </ul>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; LUMINA AUDIO 2025</p>
+      <div class="footer-col">
+        <h2>OUR POLICIES</h2>
+        <ul>
+          <li><a href="#">Accessibility</a></li>
+          <li><a href="#">Counterfeit</a></li>
+          <li><a href="#">Change cookie settings</a></li>
+          <li><a href="#">Cookie policy</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Policies and terms</a></li>
+        </ul>
       </div>
-    </section>
-    </main>
+
+      <div class="footer-col">
+        <h2>OUR COMPANY</h2>
+        <ul>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Investors</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Press</a></li>
+          <li><a href="#">Custom integration</a></li>
+          <li><a href="#">Become a sales partner</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h2>SOCIAL LINKS</h2>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">LinkedIn</a></li>
+          <li><a href="#">X</a></li>
+          <li><a href="#">Youtube</a></li>
+          <li><a href="#">TikTok</a></li>
+          <li><a href="#">Pinterest</a></li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; LUMINA AUDIO 2025</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
