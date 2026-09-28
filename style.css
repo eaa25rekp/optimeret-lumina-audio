@@ -552,6 +552,7 @@ så ringen altid følger den runde form, uanset browser)*/
   height: 320px;
   width: 280px;
   padding: 10px;
+  border-radius: 20px;
   object-fit: cover;
   /*udfylder billederne i den defineret størrelse uden at strække billederne*/
 }
@@ -963,7 +964,7 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 }
 
-/*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
+/*HER INDSÆTTES EXPLORE MORE PRODUCTS SECTION */
 
 .product-showcase {
   padding: 80px;
@@ -979,17 +980,39 @@ så ringen altid følger den runde form, uanset browser)*/
 }
 
 .product-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  display: flex;
   gap: 24px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
+  padding-bottom: 20px;
+
+  scrollbar-width: none;
+}
+
+.product-grid::-webkit-scrollbar {
+  display: none;
 }
 
 .product-card {
+  flex: 0 0 22%;
+  min-width: 280px;
+
   display: flex;
   flex-direction: column;
+
   background-color: var(--Card-bg);
   padding: 16px;
   color: var(--tekst-farve);
+
+  scroll-snap-align: start;
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+
 }
 
 .product-card img {
@@ -1005,73 +1028,6 @@ så ringen altid følger den runde form, uanset browser)*/
   justify-content: space-between;
   gap: 8px;
 }
-
-.product-price {
-  font-family: "Manrope", sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  white-space: nowrap;
-}
-
-.product-price.on-sale {
-  color: #b23b3b;
-}
-
-.product-category {
-  margin-top: 4px;
-  font-size: 14px;
-  opacity: 0.7;
-}
-
-
-
-#Produktside2 {
-  display: flex;
-  justify-content: space-between;
-  padding: 80px;
-  background-color: var(--bg-color);
-  height: 830px;
-  width: 100%;
-  margin-top: 10px;
-  align-items: center;
-}
-
-.colorB,
-.colorB1,
-.colorB2,
-.colorB3,
-.colorB4 {
-  opacity: 0;
-  inset: 0;
-  position: absolute;
-  transition: 0.4 ease;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: left;
-}
-
-.colorB1 {
-  background-image: url(images/speaker-colors/jacks-whiteu.bg.png);
-}
-
-.colorB2 {
-  background-image: url(images/speaker-colors/sabbath-black-u.bg.png);
-}
-
-.colorB3 {
-  background-image: url(images/speaker-colors/springing-silveru.bg.png);
-}
-
-.colorB4 {
-  background-image: url(images/speaker-colors/crisp-brownu.bg.png);
-}
-
-.colorB.active {
-  opacity: 1;
-}
-
-/*HER INDSÆTTES THE ONE THATS GOING AWAY SEKTION*/
-/* se .product-showcase, .section-header, .product-grid, .product-card ovenfor */
 
 /*HER INDSÆTTES FOOTER*/
 
