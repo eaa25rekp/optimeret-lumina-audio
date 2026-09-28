@@ -763,7 +763,7 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 }
 
-.FeaturesButton {
+.BuynowButton {
   position: absolute;
   /*Placerer knappen ovenpå billedet*/
   top: 400px;
@@ -779,7 +779,7 @@ så ringen altid følger den runde form, uanset browser)*/
 }
 
 /*FEATURES knap hover effekt*/
-.FeaturesButton:hover {
+.BuynowButton:hover {
   background-color: var(--CTA-tekst);
   color: var(--CTA);
   border-color: var(--CTA);
