@@ -316,6 +316,9 @@ p.hero-subtitle {
 
 /*HER INDSÆTTES ACCORDION STYLES TIL PRODUKTSIDE1*/
 
+
+
+
 .product-accordion {
   width: 100%;
 }
@@ -335,7 +338,35 @@ p.hero-subtitle {
   font-size: 16px;
 
   cursor: pointer;
+  list-style: none;
 }
+
+.product-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Create downward arrow */
+.product-accordion summary::after {
+  content: "";
+  width: 8px;
+  height: 8px;
+
+  border-right: 1.5px solid var(--tekst-farve);
+  border-bottom: 1.5px solid var(--tekst-farve);
+
+  transform: rotate(45deg);
+  transition: transform 0.3s ease;
+
+  margin-right: 4px;
+}
+
+/* Arrow points upward when opened */
+.product-accordion details[open] summary::after {
+  transform: rotate(-135deg);
+}
+
+
+
 
 .product-accordion p {
   padding: 0 0 18px;
@@ -1087,12 +1118,12 @@ så ringen altid følger den runde form, uanset browser)*/
 
 .footer-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
 .footer-col h4 {
-  font-family: "Manrope", sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -1109,7 +1140,7 @@ så ringen altid følger den runde form, uanset browser)*/
 .footer-col a {
   color: var(--tekst-billeder);
   text-decoration: none;
-  font-family: "Manrope", sans-serif;
+  font-family: "Jura", sans-serif;
   font-size: 14px;
   opacity: 0.75;
 }
