@@ -317,8 +317,6 @@ p.hero-subtitle {
 /*HER INDSÆTTES ACCORDION STYLES TIL PRODUKTSIDE1*/
 
 
-
-
 .product-accordion {
   width: 100%;
 }
@@ -364,8 +362,6 @@ p.hero-subtitle {
 .product-accordion details[open] summary::after {
   transform: rotate(-135deg);
 }
-
-
 
 
 .product-accordion p {
@@ -676,7 +672,7 @@ så ringen altid følger den runde form, uanset browser)*/
   cursor: pointer;
 }
 
-/*FEATURES knap hover effekt*/
+/*BUY NOW knap hover effekt*/
 .BuynowButton:hover {
   background-color: var(--CTA-tekst);
   color: var(--CTA);
@@ -1045,6 +1041,32 @@ så ringen altid følger den runde form, uanset browser)*/
 
 /*HER INDSÆTTES EXPLORE MORE PRODUCTS SECTION */
 
+#JustOneMore .section-header {
+  margin-bottom: 70px;
+}
+
+#JustOneMore .section-header h2 {
+  font-family: "Jura", sans-serif;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1.1;
+
+  color: var(--tekst-farve);
+
+  margin: 0 0 45px 0;
+}
+
+#JustOneMore .section-header p {
+  font-family: "Jura", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 1.3;
+
+  color: var(--tekst-farve);
+
+  margin: 0;
+}
+
 .product-showcase {
   padding: 80px;
   background-color: var(--bg-color);
@@ -1068,6 +1090,8 @@ så ringen altid følger den runde form, uanset browser)*/
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 
+  /* Extra space for the hover expansion */
+  padding-top: 12px;
   padding-bottom: 20px;
 
   scrollbar-width: none;
@@ -1088,10 +1112,18 @@ så ringen altid følger den runde form, uanset browser)*/
   padding: 16px;
   color: var(--tekst-farve);
 
+
   scroll-snap-align: start;
   border-radius: 20px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transform-origin: center;
 
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .product-card img {
@@ -1106,6 +1138,13 @@ så ringen altid følger den runde form, uanset browser)*/
   align-items: center;
   justify-content: space-between;
   gap: 8px;
+}
+
+.product-card h3 {
+  font-family: "Jura", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin: 0;
 }
 
 /*HER INDSÆTTES FOOTER*/
