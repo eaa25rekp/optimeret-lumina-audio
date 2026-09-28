@@ -100,35 +100,35 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  
+
 }
 
 .hero-scroll {
   position: absolute;
-  
-    left: 50%;
-    bottom: 25px;
-  
-    transform: translateX(-50%);
-  
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 12px;
-  
-    color: var(--tekst-billeder);
-    text-align: center;
-    z-index: 3;
-  
+
+  left: 50%;
+  bottom: 25px;
+
+  transform: translateX(-50%);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+
+  color: var(--tekst-billeder);
+  text-align: center;
+  z-index: 3;
+
 }
 
 .hero-scroll p {
-    margin: 0;
-      font-family: "Jura", sans-serif;
-      font-size: 16px;
-      font-weight: 400;
-    
-      white-space: nowrap;
+  margin: 0;
+  font-family: "Jura", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+
+  white-space: nowrap;
 }
 
 .hero-scroll-arrow {
@@ -598,7 +598,183 @@ så ringen altid følger den runde form, uanset browser)*/
   text-align: left;
 }
 
-/*FEATURES knap styles*/
+
+
+/* ========================================
+   FEATURES SECTION
+======================================== */
+
+#Features {
+  width: 100%;
+  padding: 90px 24px 70px;
+  background-color: var(--bg-color);
+  color: var(--tekst-farve);
+}
+
+
+/* ---------- TOP ---------- */
+
+.features-header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+
+  padding: 0 56px;
+  margin-bottom: 72px;
+}
+
+
+/* Left side */
+
+.features-title {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.features-title .product-label {
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+
+  margin-bottom: 14px;
+}
+
+.features-title h2 {
+  font-family: "Jura", sans-serif;
+  font-size: 72px;
+  font-weight: 300;
+  line-height: 1;
+
+  margin: 0;
+}
+
+
+/* Right side */
+
+.features-intro {
+  font-family: "Jura", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.35;
+
+  text-align: center;
+  margin: 0;
+}
+
+
+/* ---------- FEATURE CARDS ---------- */
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 32px;
+}
+
+
+/* Individual card */
+
+.feature-card {
+  min-height: 405px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  padding: 72px 32px 40px;
+
+  background-color: var(--bg-color);
+
+  border: 1px solid #e8e8e8;
+  border-radius: 24px;
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.16);
+}
+
+
+/* Icons */
+
+.feature-icon {
+  width: 64px;
+  height: 64px;
+
+  object-fit: contain;
+
+  margin-bottom: 38px;
+}
+
+
+/* Card headings */
+
+.feature-card h3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.3;
+
+  margin: 0 0 20px;
+}
+
+
+/* Bullet points */
+
+.feature-card ul {
+  margin: 0;
+  padding-left: 22px;
+
+  font-family: "Manrope", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+.feature-card li {
+  padding-left: 2px;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 1000px) {
+
+  .features-header {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 0;
+  }
+
+  .features-intro {
+    text-align: left;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  #Features {
+    padding: 60px 24px;
+  }
+
+  .features-title h2 {
+    font-size: 48px;
+  }
+
+  .features-intro {
+    font-size: 24px;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: 340px;
+  }
+}
 
 .FeaturesButton {
   position: absolute;
@@ -622,82 +798,6 @@ så ringen altid følger den runde form, uanset browser)*/
   border-color: var(--CTA);
 }
 
-/*HER INDSÆTTES FEATURES SEKTION*/
-
-#Features {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 80px;
-  padding: 100px 80px;
-  background-color: var(--bg-color);
-}
-
-.features-image {
-  flex: 0 0 auto;
-  width: 40%;
-}
-
-.features-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-  object-fit: cover;
-}
-
-.features-content {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  width: 45%;
-  color: var(--tekst-farve);
-}
-
-.features-content h1 {
-  margin-bottom: 24px;
-}
-
-.accordion {
-  border-top: 1px solid var(--tekst-farve);
-}
-
-.accordion-item {
-  border-bottom: 1px solid var(--tekst-farve);
-}
-
-.accordion-item summary {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 20px 0;
-  font-family: "Jura", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  cursor: pointer;
-  list-style: none;
-}
-
-.accordion-item summary::-webkit-details-marker {
-  display: none;
-}
-
-.accordion-item .chevron {
-  width: 10px;
-  height: 10px;
-  border-right: 2px solid var(--tekst-farve);
-  border-bottom: 2px solid var(--tekst-farve);
-  transform: rotate(45deg);
-  transition: transform 0.3s ease;
-}
-
-.accordion-item[open] .chevron {
-  transform: rotate(-135deg);
-}
-
-.accordion-item p {
-  padding-bottom: 20px;
-  color: var(--tekst-farve);
-}
 
 /*HER INDSÆTTES JUST ONE MORE SEKTION OG THE ONE THATS GOING AWAY SEKTION*/
 
