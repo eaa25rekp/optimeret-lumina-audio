@@ -1023,62 +1023,7 @@ så ringen altid følger den runde form, uanset browser)*/
   opacity: 0.7;
 }
 
-/*THE ONE THAT BRINGS US TOGETHER billede styles*/
 
-#BringsUsTogether {
-  position: relative;
-  /*Gør det muligt, at placere tekst/knapper oven på billedet*/
-}
-
-#BringsUsTogether img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/*THE ONE THAT BRINGS US TOGETHER tekst styles*/
-
-#BringsUsTogether h1 {
-  color: var(--tekst-billeder);
-  text-shadow: 0 4px 12px var(--CTA);
-  /* Tekstens placering */
-  position: absolute;
-  /*Placerer teksten ovenpå billedet*/
-  left: 120px;
-  right: 700px;
-  top: 200px;
-  text-align: left;
-}
-
-/*THE ONE THAT BRINGS US TOGETHER knap styles*/
-
-.BuyNowButton {
-  position: absolute;
-  /*Placerer knappen ovenpå billedet*/
-  top: 400px;
-  left: 550px;
-  border-radius: 20px;
-  padding: 10px 56px;
-  background-color: var(--CTA);
-  color: var(--CTA-tekst);
-  font-family: "Jura", sans-serif;
-  font-size: 24px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-/*THE ONE THAT BRINGS US TOGETHER knap hover*/
-
-.BuyNowButton:hover {
-  background-color: var(--CTA-tekst);
-  color: var(--CTA);
-  border-color: var(--CTA);
-}
-
-/*HER INDSÆTTES ANDEN PRODUKTSIDE*/
-/*Produktside2 genbruger nu nøjagtig samme opbygning som Produktside1
-(samme .container/.color-billeder-princip og samme .button-knapper),
-så de to produktsider ser 100% ens ud - kun tekst/billeder er forskellige*/
 
 #Produktside2 {
   display: flex;
