@@ -1155,19 +1155,19 @@ så ringen altid følger den runde form, uanset browser)*/
   padding: 80px;
 }
 
+#Footer .footer-col h2 {
+  font-family: "Jura", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--tekst-billeder);
+}
+
 .footer-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 40px;
 }
 
-.footer-col h4 {
-  font-family: "Jura", sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  margin-bottom: 20px;
-}
 
 .footer-col ul {
   list-style: none;
