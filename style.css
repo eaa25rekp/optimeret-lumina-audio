@@ -1163,40 +1163,28 @@ så ringen altid følger den runde form, uanset browser)*/
   opacity: 0.6;
 }
 
-/* ========================================
-   MOBILE
-======================================== */
+/* ==========================================
+  MOBILE FIX
+   
+========================================== */
 
 @media (max-width: 600px) {
 
-  /* ---------- GLOBAL ---------- */
-
-  h1 {
-    font-size: 42px;
-  }
-
-  h2 {
-    font-size: 32px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
-
-
-  /* ---------- NAV ---------- */
+  /* ====================
+     NAV
+  ==================== */
 
   .hero-nav {
     height: 70px;
-    padding: 0 20px;
+    padding: 0 16px;
   }
 
   .logo img {
-    width: 90px;
+    width: 100px;
   }
 
   #menu {
-    gap: 12px;
+    gap: 10px;
   }
 
   #menu img {
@@ -1204,64 +1192,71 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .nav-item {
-    font-size: 11px;
+    font-size: 10px;
+    gap: 3px;
   }
 
 
-  /* ---------- HERO ---------- */
+  /* ====================
+     HERO
+  ==================== */
 
   .hero {
-    height: calc(100vh - 70px);
+    height: calc(100svh - 70px);
+    min-height: 620px;
     background-position: center;
   }
 
   #HeroText {
-    left: 20px;
-    right: 20px;
-    max-width: none;
+    left: 24px;
+    right: 24px;
+    top: 45%;
+    max-width: 330px;
   }
 
   #HeroText h1 {
-    font-size: 42px;
+    font-size: 48px;
     line-height: 1.05;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
 
   p.hero-subtitle {
-    font-size: 24px;
-    line-height: 1.25;
-    margin-bottom: 24px;
+    font-size: 22px;
+    line-height: 1.3;
+    margin-bottom: 28px;
   }
 
   .HeroButton {
     font-size: 18px;
-    padding: 10px 36px;
+    padding: 11px 32px;
   }
 
   .hero-scroll {
-    bottom: 20px;
-    width: calc(100% - 40px);
+    bottom: 18px;
   }
 
   .hero-scroll p {
     font-size: 13px;
-    white-space: normal;
   }
 
 
-  /* ---------- MAIN PRODUCT ---------- */
+  /* ====================
+     PRODUCT
+  ==================== */
 
   #Produktside1 {
-    grid-template-columns: 1fr;
-    padding: 50px 20px;
-    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 24px 70px;
+    min-height: 0;
     gap: 30px;
   }
 
   #Produktside1 .container {
     width: 100%;
-    max-width: 350px;
-    height: 420px;
+    max-width: 320px;
+    height: 400px;
+    margin: 0 auto;
   }
 
   #Produktside1 .color {
@@ -1271,27 +1266,44 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .produktinfo {
+    width: 100%;
     max-width: none;
-    gap: 24px;
+    gap: 25px;
   }
 
   .headlineProduct h2 {
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 34px;
   }
 
   .product-features {
-    font-size: 15px;
+    font-size: 16px;
+    line-height: 1.5;
   }
+
+
+  /* ====================
+     COLOUR SELECTOR
+  ==================== */
 
   .ButtonContainer {
     width: 100%;
+    gap: 15px;
+  }
+
+  .ButtonContainer>div {
+    gap: 12px;
   }
 
   .button {
-    width: 28px;
-    height: 28px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
   }
+
+
+  /* ====================
+     PRICE / ADD TO CART
+  ==================== */
 
   .price {
     width: 100%;
@@ -1299,38 +1311,17 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .price .HeroButton {
-    padding: 10px 25px;
-  }
-
-  .read-more {
-    margin-top: 20px;
-    text-align: center;
-  }
-
-  .read-more p {
-    font-size: 15px;
+    font-size: 18px;
+    padding: 12px 28px;
   }
 
 
-  /* ---------- ACCORDION ---------- */
-
-  .product-accordion summary {
-    font-size: 15px;
-  }
-
-  .product-accordion details>p {
-    font-size: 15px;
-  }
-
-  .key-elements-list {
-    font-size: 15px;
-  }
-
-
-  /* ---------- FEATURES ---------- */
+  /* ====================
+     FEATURES
+  ==================== */
 
   #Features {
-    padding: 60px 20px;
+    padding: 60px 24px;
   }
 
   .features-header {
@@ -1339,11 +1330,11 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .features-title h2 {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .features-intro {
-    font-size: 22px;
+    font-size: 21px;
     text-align: left;
   }
 
@@ -1353,31 +1344,27 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .feature-card {
-    min-height: auto;
+    min-height: 0;
     padding: 40px 28px;
   }
 
-  .feature-icon {
-    width: 52px;
-    height: 52px;
-    margin-bottom: 28px;
-  }
 
-
-  /* ---------- TRUSTPILOT ---------- */
+  /* ====================
+     TRUSTPILOT
+  ==================== */
 
   #TrustpilotSection {
-    min-height: 720px;
+    min-height: 700px;
   }
 
   .trustpilot-heading {
     top: 40px;
-    left: 20px;
-    right: 20px;
+    left: 24px;
+    right: 24px;
   }
 
   .trustpilot-heading h2 {
-    font-size: 42px;
+    font-size: 40px;
   }
 
   .trustpilot-subtitle {
@@ -1385,41 +1372,37 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .review-card {
-    width: calc(100% - 40px);
+    width: calc(100% - 48px);
     padding: 30px 24px;
   }
 
-  .review-stars {
-    font-size: 24px;
-  }
-
-  .review-text {
-    font-size: 15px;
-  }
-
   .trustpilot-rating {
-    right: 20px;
+    right: 24px;
     bottom: 30px;
   }
 
 
-  /* ---------- EXPLORE MORE ---------- */
+  /* ====================
+     EXPLORE MORE
+  ==================== */
 
   .product-showcase {
-    padding: 60px 20px;
+    padding: 60px 24px;
   }
 
   #JustOneMore .section-header {
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   #JustOneMore .section-header h2 {
-    font-size: 42px;
-    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 20px;
   }
 
   #JustOneMore .section-header p {
     font-size: 21px;
+    line-height: 1.35;
   }
 
   .product-grid {
@@ -1427,19 +1410,23 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .product-card {
-    flex: 0 0 82%;
+    flex: 0 0 85%;
     min-width: 0;
   }
 
   .product-card img {
-    height: 200px;
+    height: 220px;
   }
 
 
-  /* ---------- GIFT ---------- */
+  /* ====================
+     GIFT
+  ==================== */
 
   #TheOneGift {
-    height: 600px;
+    position: relative;
+    height: 560px;
+    overflow: hidden;
   }
 
   #TheOneGift>img {
@@ -1450,41 +1437,51 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
   .gift-content {
-    left: 20px;
-    right: 20px;
+    left: 24px;
+    right: 24px;
+    top: 50%;
     width: auto;
+    max-width: none;
+    transform: translateY(-50%);
   }
 
   .gift-content h2 {
-    font-size: 42px;
-    line-height: 1.15;
+    font-size: 40px;
+    line-height: 1.1;
+    margin-bottom: 20px;
   }
 
   .gift-content p {
     font-size: 17px;
-    margin-bottom: 30px;
+    line-height: 1.4;
+    max-width: 100%;
+    margin-bottom: 28px;
   }
 
   .gift-content .BuyNowButton {
-    font-size: 20px;
-    padding: 12px 40px;
+    font-size: 19px;
+    padding: 12px 36px;
   }
 
 
-  /* ---------- INSTAGRAM ---------- */
+  /* ====================
+     INSTAGRAM
+  ==================== */
 
   #LuminateYourself {
     padding: 60px 0;
   }
 
   #LuminateYourself h2 {
-    margin: 0 20px 20px;
-    font-size: 42px;
+    margin: 0 24px 20px;
+    font-size: 40px;
+    line-height: 1.1;
   }
 
   #LuminateYourself>p {
-    margin: 0 20px 40px;
+    margin: 0 24px 40px;
     font-size: 21px;
+    line-height: 1.35;
   }
 
   .InstaKarrusel {
@@ -1498,18 +1495,42 @@ så ringen altid følger den runde form, uanset browser)*/
   }
 
 
-  /* ---------- FOOTER ---------- */
+  /* ====================
+     FOOTER
+  ==================== */
 
   #Footer {
-    padding: 60px 20px 30px;
+    padding: 55px 24px 30px;
   }
 
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 45px 25px;
+    gap: 45px 30px;
+  }
+
+  .footer-col {
+    min-width: 0;
+  }
+
+  #Footer .footer-col h2 {
+    font-size: 13px;
+  }
+
+  .footer-col a {
+    font-size: 13px;
+    overflow-wrap: anywhere;
   }
 
   .footer-bottom {
     margin-top: 60px;
+  }
+
+
+  /* ====================
+     SAFETY
+  ==================== */
+
+  img {
+    max-width: 100%;
   }
 }
