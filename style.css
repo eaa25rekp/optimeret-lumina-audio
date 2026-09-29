@@ -417,35 +417,38 @@ p.hero-subtitle {
 }
 
 
-.color {
+#Produktside1 .container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 650px;
+  justify-self: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Produktside1 .color {
   position: absolute;
-  inset: 0;
+
+  width: 80%;
+  height: 80%;
+
+  object-fit: contain;
+
   opacity: 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.3s ease;
+}
+
+#Produktside1 .color.active {
+  opacity: 1;
 }
 
 .color.active {
   opacity: 1;
 }
 
-.color1 {
-  background-image: url(images/speaker-colors/jacks-whiteu.bg.webp);
-}
-
-.color2 {
-  background-image: url(images/speaker-colors/sabbath-black-u.bg.webp);
-}
-
-.color3 {
-  background-image: url(images/speaker-colors/springing-silveru.bg.webp);
-}
-
-.color4 {
-  background-image: url(images/speaker-colors/crisp-brownu.bg.webp);
-}
 
 .ButtonContainer {
   display: flex;
