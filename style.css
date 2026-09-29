@@ -81,7 +81,7 @@ summary:focus-visible {
 .hero {
   position: relative;
   height: calc(100vh - 85px);
-  background-image: url(images/lumina-by-day/herobillede.webp);
+  background-image: url(images/lumina-by-day/herobilledekorrekt.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
