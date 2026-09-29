@@ -1162,3 +1162,354 @@ så ringen altid følger den runde form, uanset browser)*/
   font-size: 13px;
   opacity: 0.6;
 }
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 600px) {
+
+  /* ---------- GLOBAL ---------- */
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+
+  /* ---------- NAV ---------- */
+
+  .hero-nav {
+    height: 70px;
+    padding: 0 20px;
+  }
+
+  .logo img {
+    width: 90px;
+  }
+
+  #menu {
+    gap: 12px;
+  }
+
+  #menu img {
+    width: 18px;
+  }
+
+  .nav-item {
+    font-size: 11px;
+  }
+
+
+  /* ---------- HERO ---------- */
+
+  .hero {
+    height: calc(100vh - 70px);
+    background-position: center;
+  }
+
+  #HeroText {
+    left: 20px;
+    right: 20px;
+    max-width: none;
+  }
+
+  #HeroText h1 {
+    font-size: 42px;
+    line-height: 1.05;
+    margin-bottom: 20px;
+  }
+
+  p.hero-subtitle {
+    font-size: 24px;
+    line-height: 1.25;
+    margin-bottom: 24px;
+  }
+
+  .HeroButton {
+    font-size: 18px;
+    padding: 10px 36px;
+  }
+
+  .hero-scroll {
+    bottom: 20px;
+    width: calc(100% - 40px);
+  }
+
+  .hero-scroll p {
+    font-size: 13px;
+    white-space: normal;
+  }
+
+
+  /* ---------- MAIN PRODUCT ---------- */
+
+  #Produktside1 {
+    grid-template-columns: 1fr;
+    padding: 50px 20px;
+    min-height: auto;
+    gap: 30px;
+  }
+
+  #Produktside1 .container {
+    width: 100%;
+    max-width: 350px;
+    height: 420px;
+  }
+
+  #Produktside1 .color {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .produktinfo {
+    max-width: none;
+    gap: 24px;
+  }
+
+  .headlineProduct h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .product-features {
+    font-size: 15px;
+  }
+
+  .ButtonContainer {
+    width: 100%;
+  }
+
+  .button {
+    width: 28px;
+    height: 28px;
+  }
+
+  .price {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .price .HeroButton {
+    padding: 10px 25px;
+  }
+
+  .read-more {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .read-more p {
+    font-size: 15px;
+  }
+
+
+  /* ---------- ACCORDION ---------- */
+
+  .product-accordion summary {
+    font-size: 15px;
+  }
+
+  .product-accordion details>p {
+    font-size: 15px;
+  }
+
+  .key-elements-list {
+    font-size: 15px;
+  }
+
+
+  /* ---------- FEATURES ---------- */
+
+  #Features {
+    padding: 60px 20px;
+  }
+
+  .features-header {
+    gap: 25px;
+    margin-bottom: 40px;
+  }
+
+  .features-title h2 {
+    font-size: 42px;
+  }
+
+  .features-intro {
+    font-size: 22px;
+    text-align: left;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .feature-card {
+    min-height: auto;
+    padding: 40px 28px;
+  }
+
+  .feature-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 28px;
+  }
+
+
+  /* ---------- TRUSTPILOT ---------- */
+
+  #TrustpilotSection {
+    min-height: 720px;
+  }
+
+  .trustpilot-heading {
+    top: 40px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .trustpilot-heading h2 {
+    font-size: 42px;
+  }
+
+  .trustpilot-subtitle {
+    font-size: 20px;
+  }
+
+  .review-card {
+    width: calc(100% - 40px);
+    padding: 30px 24px;
+  }
+
+  .review-stars {
+    font-size: 24px;
+  }
+
+  .review-text {
+    font-size: 15px;
+  }
+
+  .trustpilot-rating {
+    right: 20px;
+    bottom: 30px;
+  }
+
+
+  /* ---------- EXPLORE MORE ---------- */
+
+  .product-showcase {
+    padding: 60px 20px;
+  }
+
+  #JustOneMore .section-header {
+    margin-bottom: 35px;
+  }
+
+  #JustOneMore .section-header h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+  }
+
+  #JustOneMore .section-header p {
+    font-size: 21px;
+  }
+
+  .product-grid {
+    gap: 16px;
+  }
+
+  .product-card {
+    flex: 0 0 82%;
+    min-width: 0;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+
+  /* ---------- GIFT ---------- */
+
+  #TheOneGift {
+    height: 600px;
+  }
+
+  #TheOneGift>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .gift-content {
+    left: 20px;
+    right: 20px;
+    width: auto;
+  }
+
+  .gift-content h2 {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  .gift-content p {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .gift-content .BuyNowButton {
+    font-size: 20px;
+    padding: 12px 40px;
+  }
+
+
+  /* ---------- INSTAGRAM ---------- */
+
+  #LuminateYourself {
+    padding: 60px 0;
+  }
+
+  #LuminateYourself h2 {
+    margin: 0 20px 20px;
+    font-size: 42px;
+  }
+
+  #LuminateYourself>p {
+    margin: 0 20px 40px;
+    font-size: 21px;
+  }
+
+  .InstaKarrusel {
+    grid-auto-columns: 75%;
+  }
+
+  .InstaKarrusel img {
+    width: 100%;
+    height: 340px;
+    padding: 8px;
+  }
+
+
+  /* ---------- FOOTER ---------- */
+
+  #Footer {
+    padding: 60px 20px 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 45px 25px;
+  }
+
+  .footer-bottom {
+    margin-top: 60px;
+  }
+}
